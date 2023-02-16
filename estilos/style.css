@@ -15,7 +15,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: .7em;
+    font-size: .75em;
 }
 
 #caixa {
@@ -74,7 +74,7 @@ section {
 
 section > h2 {
     text-align: center;
-    font-size: 9em;
+    font-size: 7em;
     padding-bottom: 30px;
     padding-top: 10px;
 }
@@ -83,11 +83,11 @@ section > p {
     text-align: justify;
     padding-right: 10px;
     line-height: 1.7em;
-    font-size: 7em;
+    font-size: 5em;
 }
 
 .letra-lista {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 section > ul {
