@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor0: #D6E3EE;
+    --cor1: #60666B;
+    --cor2: #40576B;
+    --cor3: #8DBFEB;
+    --cor4: #6E95B8;
+
+    --fonte-destaque: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-padrao: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: .7em
+}
+
+#caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #40576B;
+}
+
+#logoinicio {
+    width: 100px;
+    margin: 10px 10px;
+}
+
+ul#lista {
+    list-style-type: none;
+    text-align: center;
+    padding: 3px;
+    margin-right: 30px;
+}
+
+ul#lista > li > a {
+    font-size: 11em;
+    line-height: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fonte-destaque);
+    color: #D6E3EE;
+    padding: 10px;
+}
+
+a:hover {
+    color: #8DBFEB;
+    text-decoration: underline;
+}
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url("../imagens/fundo-01.jpg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background: url("../imagens/frame-iphone.png") no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform 0.3s, border 0.1s;
+}
+
+footer {
+    background-color: #40576B;
+    color: #D6E3EE;
+}  
+
+#rodape {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding: 12px;
+    line-height: 1.7em;
+    font-size: 3em;
+}
