@@ -101,6 +101,10 @@ section > ul > li {
     font-size: 7em;
 }
 
+section > ul#educ > li {
+    font-size: 8em;
+}
+
 section.normal {
     background-color: #8dbfeba0;
     color: #40576B;
