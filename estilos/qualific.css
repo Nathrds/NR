@@ -59,6 +59,7 @@ a:hover {
 main {
     background-color: #D6E3EE;
     font-family: var(--fonte-padrao);
+    position: relative;
 }
 
 section {

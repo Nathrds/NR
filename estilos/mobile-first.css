@@ -46,13 +46,12 @@ Grandes telas: acima de 1200px
         font-size: 18px;
     }
 
-    section#redes-sociais {
-    display: flex;
-    justify-content: center;
-    padding-top: 3px;
+    section#contatos > h2 {
+        font-size: 23px;
     }
 
-    section#redes-sociais img {
-        display: inline-block;
+    section#contatos > p {
+        font-size: 18px;
+        padding-bottom: 0;
     }
 }
