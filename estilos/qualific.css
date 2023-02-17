@@ -109,7 +109,7 @@ div#idiomas > ul > li {
     padding-bottom: 5px;
     list-style-type: none;
     line-height: 1.6;
-    font-size: .9em;
+    font-size: 1em;
     padding-bottom: 15px;
 }
 
@@ -123,12 +123,12 @@ div#experiencia > ul {
     padding: 20px;
     text-align: left;
     list-style-type: none;
-    line-height: 1.7em;
+    line-height: 1.3em;
 }
 
 div#experiencia > ul > li {
     padding: 10px;
-    font-size: .9em;
+    font-size: 1em;
     padding-bottom: 26px;
 }
 
