@@ -15,7 +15,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: .73em;
+    font-size: .75em;
 }
 
 #caixa {
@@ -87,7 +87,7 @@ div#qualitec > ul > li {
     padding-bottom: 5px;
     list-style-type: none;
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 div#qualitec > ul.coluna {
@@ -109,7 +109,7 @@ div#idiomas > ul > li {
     padding-bottom: 5px;
     list-style-type: none;
     line-height: 1.6;
-    font-size: 1.3em;
+    font-size: .9em;
     padding-bottom: 15px;
 }
 
@@ -128,7 +128,7 @@ div#experiencia > ul {
 
 div#experiencia > ul > li {
     padding: 10px;
-    font-size: 1.3em;
+    font-size: .9em;
     padding-bottom: 26px;
 }
 
