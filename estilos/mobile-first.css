@@ -42,6 +42,10 @@ Grandes telas: acima de 1200px
         font-size: 15px;
     }
 
+    section > ul#educ > li {
+        font-size: 19px;
+    }
+
     section#redes-sociais {
     display: flex;
     justify-content: center;
