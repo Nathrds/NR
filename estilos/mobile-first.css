@@ -50,6 +50,7 @@ Grandes telas: acima de 1200px
     display: flex;
     justify-content: center;
     padding: 20px;
+    padding-top: 3px;
     }
 
     section#redes-sociais img {
