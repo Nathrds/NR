@@ -83,7 +83,7 @@ main {
 .container img {
     display: block;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 50%;
     padding-bottom: 40px;
 }
 
