@@ -10,6 +10,10 @@ Grandes telas: acima de 1200px
 */
 
 @media screen and (max-width: 768px) {
+    main {
+        padding-bottom: 0px;
+    }
+    
     ul#lista > li > a {
         font-size: 13px;
     }
