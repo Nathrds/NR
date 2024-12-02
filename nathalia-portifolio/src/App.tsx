@@ -1,10 +1,11 @@
 import './App.css'
+import { Portfolio } from './portifolio/Portfolio'
 
 function App() {
 
   return (
     <>
-       <h1>Esse</h1>
+       < Portfolio/>
     </>
   )
 }
