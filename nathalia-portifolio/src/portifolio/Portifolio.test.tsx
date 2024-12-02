@@ -3,17 +3,17 @@
 // import { Portfolio } from './Portfolio';
 
 // describe('Portfolio', () => {
-//   it('renders header with navigation', () => {
+//   it('renders navigation links', () => {
 //     render(<Portfolio />);
-//     expect(screen.getByRole('banner')).toBeInTheDocument();
 //     expect(screen.getByRole('navigation')).toBeInTheDocument();
+//     expect(screen.getByText('Home')).toBeInTheDocument();
+//     expect(screen.getByText('About')).toBeInTheDocument();
 //   });
 
-//   it('renders all main sections', () => {
+//   it('renders main sections', () => {
 //     render(<Portfolio />);
-//     expect(screen.getByText('About Me')).toBeInTheDocument();
-//     expect(screen.getByText('Professional Experience')).toBeInTheDocument();
-//     expect(screen.getByText('Skills')).toBeInTheDocument();
-//     expect(screen.getByText('Certifications')).toBeInTheDocument();
+//     expect(screen.getByRole('banner')).toBeInTheDocument();
+//     expect(screen.getByRole('main')).toBeInTheDocument();
+//     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
 //   });
 // });
