@@ -28,17 +28,19 @@ export const Portfolio = () => {
       <main role="main">
         {/* Hero Section */}
         <section className={styles.section} id="home">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d935f44b3c424fe97725cbb9cc549f708e289613635011b009a502e28083ccd7?placeholderIfAbsent=true&apiKey=959c2ee901d142ddb70599de45bd7956" alt="Nathália's profile" className={styles.img2} />
-          <div className={styles.container}>
-            <h2 className={styles.title2}>Nathália Rodrigues</h2>
-            <div className={styles.selection}>
-              <span className={styles.labelNormal}>Front-end Developer</span>
-            </div>
-            <p className={styles.description}>
-              Passionate about creating responsive and engaging web experiences.
-            </p>
+          <div className={styles.section_container}>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d935f44b3c424fe97725cbb9cc549f708e289613635011b009a502e28083ccd7?placeholderIfAbsent=true&apiKey=959c2ee901d142ddb70599de45bd7956" alt="Nathália's profile" className={styles.img2} />
+              <div className={styles.container}>
+                <h2 className={styles.title2}>Nathália Rodrigues</h2>
+                <div className={styles.selection}>
+                  <span className={styles.labelNormal}>Front-end Developer</span>
+                </div>
+                <p className={styles.description}>
+                  Passionate about creating responsive and engaging web experiences.
+                </p>
+              </div>
           </div>
-          <a href="https://github.com" className={styles.button} target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Nathrds" className={styles.button} target="_blank" rel="noopener noreferrer">
             <span className={styles.primary}>View Github</span>
           </a>
         </section>
