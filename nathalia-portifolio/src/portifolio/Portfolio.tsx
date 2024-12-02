@@ -7,12 +7,15 @@ import { EducationItem } from './components/EducationItem';
 import { AboutItem } from './components/AboutItem';
 import styles from './css/Portfolio.module.css';
 
+import Logo from '../assets/Logo NR roxo.png'
+import Avatar from '../assets/avatar.png'
+
 export const Portfolio = () => {
   return (
     <div className={styles.page}>
       <header className={styles.topBar} role="banner">
         <div className={styles.topBar_logo}>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/89d1eb31dde756913f28bc4f1db8b2393a2beb79626a03a4f45148cc31e5659e?placeholderIfAbsent=true&apiKey=959c2ee901d142ddb70599de45bd7956" alt="Portfolio Logo" className={styles.img} />
+            <img src={Logo} alt="Portfolio Logo" className={styles.img} />
             <h1 className={styles.title}>Nathália Portfolio</h1>
         </div>
         <nav className={styles.navigation} role="navigation">
@@ -29,7 +32,7 @@ export const Portfolio = () => {
         {/* Hero Section */}
         <section className={styles.section} id="home">
           <div className={styles.section_container}>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d935f44b3c424fe97725cbb9cc549f708e289613635011b009a502e28083ccd7?placeholderIfAbsent=true&apiKey=959c2ee901d142ddb70599de45bd7956" alt="Nathália's profile" className={styles.img2} />
+              <img src={Avatar} alt="Nathália's profile" className={styles.img2} />
               <div className={styles.container}>
                 <h2 className={styles.title2}>Nathália Rodrigues</h2>
                 <div className={styles.selection}>
