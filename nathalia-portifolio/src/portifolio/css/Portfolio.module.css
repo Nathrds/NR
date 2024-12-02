@@ -8,17 +8,57 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* text-align: unset !important; */
     box-sizing: border-box;
+    max-width: none !important;
+}
+
+body {
+    /* border: 3px solid purple; */
+    background-color: var(--color-bkg);
+    color: var(--color-text);
 }
 
 .page {
     border: 2px solid blue;
-    min-width: 100% !important;
+    width: 100%;
     height: 100%;
 }
 
+.topBar, .topBar_logo {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .topBar {
-    border: 1px solid red;
+    padding: 20px !important;
+}
+
+.img {
+    width: 36px;
+}
+
+.title {
+    font-size: 28px;
+    padding-left: 20px !important;
+    font-weight: 500;
+}
+
+/* .navigation {
+    border: 1px solid green;
+} */
+
+.tab {
+    color: var(--color-text);
+    padding: 0 40px !important;
+}
+
+.tab:hover {
+    color: var(--color-highlights);
 }
