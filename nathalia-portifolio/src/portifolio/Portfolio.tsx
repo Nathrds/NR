@@ -53,11 +53,11 @@ export const Portfolio = () => {
           <div className={styles.container2}>
             <h2 className={styles.title3}>Hello, I'm Nathália.</h2>
             <p className={styles.description2}>
-              Front-end Developer with expertise in HTML, CSS, JavaScript, TypeScript, MaterialUI and React.
+              Front-end Developer with expertise in HTML, CSS, JavaScript, TypeScript, MaterialUI, React and Figma.
             </p>
-            <a href="#contact" className={styles.button2}>
+            <a href="mailto:nathaliarsantos@live.com" className={styles.button2}>
               <span className={styles.primary2}>Contact Me</span>
-            </a>
+            </a> 
           </div>
         </section>
 
