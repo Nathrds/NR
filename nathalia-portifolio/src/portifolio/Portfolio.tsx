@@ -4,11 +4,12 @@ import { SkillItem } from './components/SkillItem';
 import { CertificationItem } from './components/CertificationItem';
 import { ExperienceItem } from './components/ExperienceItem';
 import { EducationItem } from './components/EducationItem';
-import { AboutItem } from './components/AboutItem';
+// import { AboutItem } from './components/AboutItem';
 import styles from './css/Portfolio.module.css';
 
 import Logo from '../assets/Logo NR roxo.png'
 import Avatar from '../assets/avatar.png'
+import Me from '../assets/image-about-me.png'
 
 export const Portfolio = () => {
   return (
@@ -64,14 +65,20 @@ export const Portfolio = () => {
         {/* About Items */}
         <section className={styles.contents}>
           <div className={styles.container3}>
-            <h2 className={styles.title4}>About Me</h2>
-            <p className={styles.description3}>
-              Driven web developer with a keen eye for design.
-            </p>
-            <div className={styles.list}>
+            <img src={Me} alt="Me" className={styles.img3} />
+            <div className={styles.container_aboutMe}>
+              <h2 className={styles.title4}>About Me</h2>
+              <p className={styles.description3}>
+                Driven web developer with a keen eye for design.
+              </p>
+              <div className={styles.list}>
               {aboutItems.map((item, index) => (
-                <AboutItem key={index} {...item} />
-              ))}
+                  <div key={index} className={styles.aboutItem}>
+                    <h3 className={styles.aboutItemTitle}>{item.title}</h3>
+                    <p className={styles.aboutItemDescription}>{item.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
