@@ -5,6 +5,7 @@
     --color-bkg: #121212;
     --color-text: #E0E0E0;
     --color-highlights: #BB86FC;
+    --color-line: #e0e0e06c;
 }
 
 * {
@@ -52,10 +53,6 @@ body {
     padding-left: 20px !important;
     font-weight: 500;
 }
-
-/* .navigation {
-    border: 1px solid green;
-} */
 
 .tab {
     color: var(--color-text);
@@ -123,7 +120,7 @@ body {
 /* About Section */
 .section2 {
     /* border: 1px solid red; */
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-line);
 }
 
 .container2 {
@@ -158,7 +155,7 @@ body {
 /* About Items */
 .contents {
     /* border: 1px solid red; */
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-line);
 }
 
 .container3 {
@@ -212,7 +209,7 @@ body {
 /* Experience Section */
 .list2 {
     /* border: 1px solid red; */
-    border-bottom: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-line);
     padding: 60px 170px !important;
     display: flex;
     justify-content: space-between;
