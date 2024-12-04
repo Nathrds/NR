@@ -45,13 +45,13 @@ export const experiences: ExperienceProps[] = [
     icon: "💼",
     company: "Compass UOL",
     role: "Trainee Front-end Developer",
-    period: "May 2024- Nov 2024"
+    period: "May 2024 - Nov 2024"
   },
   {
     icon: "💻",
     company: "Compass UOL",
     role: "Intern in Front-end Development (React)",
-    period: "Nov 2023- Apr 2024"
+    period: "Nov 2023 - Apr 2024"
   }
 ];
 

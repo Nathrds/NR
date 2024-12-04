@@ -208,3 +208,67 @@ body {
     font-weight: 400;
     text-align: left;
 }
+
+/* Experience Section */
+.list2 {
+    /* border: 1px solid red; */
+    border-bottom: 1px solid var(--color-text);
+    padding: 60px 170px !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container5 {
+    /* border: 1px solid darkred; */
+    text-align: left;
+}
+
+.title7 {
+    /* border: 1px solid purple; */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.description4 {
+    /* border: 2px solid aqua; */
+    padding-top: 24px !important;
+}
+
+.list3 {
+    /* border: 1px solid lightsalmon; */
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.experienceItem {
+    /* border: 1px solid darkorange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceIcon {
+    background-color: #000;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 20px !important;
+    font-size: 3.5rem;
+}
+
+.experienceCompany {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 8px !important;
+}
+
+.experienceTitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-highlights);
+    margin-bottom: 15px !important;
+}

@@ -2,7 +2,7 @@ import { testimonials, skills, certifications, experiences, education, aboutItem
 import { Testimonial } from './components/Testimonial';
 import { SkillItem } from './components/SkillItem';
 import { CertificationItem } from './components/CertificationItem';
-import { ExperienceItem } from './components/ExperienceItem';
+// import { ExperienceItem } from './components/ExperienceItem';
 import { EducationItem } from './components/EducationItem';
 // import { AboutItem } from './components/AboutItem';
 import styles from './css/Portfolio.module.css';
@@ -93,7 +93,12 @@ export const Portfolio = () => {
           </div>
           <div className={styles.list3}>
             {experiences.map((exp, index) => (
-              <ExperienceItem key={index} {...exp} />
+              <div key={index} className={styles.experienceItem}>
+                <p className={styles.experienceIcon}>{exp.icon}</p>
+                <p className={styles.experienceCompany}>{exp.company}</p>
+                <h3 className={styles.experienceTitle}>{exp.role}</h3>
+                <p className={styles.experiencePeriod}>{exp.period}</p>
+              </div>
             ))}
           </div>
         </section>
