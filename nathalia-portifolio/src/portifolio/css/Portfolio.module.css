@@ -223,13 +223,17 @@ body {
     text-align: left;
 }
 
-.title7, .title10, .title13 {
+.title7, .title10, 
+.title13, .title16 {
     /* border: 1px solid purple; */
     font-size: 40px;
     font-weight: bold;
 }
 
-.description4, .description5, .description6 {
+.description4, 
+.description5, 
+.description6,
+.description7 {
     /* border: 2px solid aqua; */
     padding-top: 24px !important;
 }
@@ -310,3 +314,43 @@ body {
 .listImgCertified {
     margin-top: 40px !important;
 }
+
+/* Skills Section */
+.dataMetrics {
+    /* border: 1px solid red; */
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+    padding: 60px 170px !important;
+}
+
+.container10 {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container11 {
+    /* border: 1px solid purple; */
+    margin-bottom: 60px !important;
+}
+
+.list8 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    width: 800px;
+}
+
+.skillItem {
+    border: 1px solid var(--color-highlights);
+    padding: 16px !important;
+    width: 187px;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.skillName {
+    color: var(--color-text);
+}
+

@@ -1,6 +1,6 @@
 import { testimonials, skills, certifications, experiences, education, aboutItems } from './data';
 import { Testimonial } from './components/Testimonial';
-import { SkillItem } from './components/SkillItem';
+// import { SkillItem } from './components/SkillItem';
 // import { CertificationItem } from './components/CertificationItem';
 // import { ExperienceItem } from './components/ExperienceItem';
 // import { EducationItem } from './components/EducationItem';
@@ -153,11 +153,13 @@ export const Portfolio = () => {
               <h2 className={styles.title16}>Skills</h2>
               <p className={styles.description7}>Technical & Soft Skills</p>
             </div>
-          </div>
-          <div className={styles.list8} role="list">
-            {skills.map((skill, index) => (
-              <SkillItem key={index} {...skill} />
-            ))}
+            <div className={styles.list8} role="list">
+              {skills.map((skill, index) => (
+                <div key={index} className={styles.skillItem}>
+                  <p className={styles.skillName}>{skill.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
