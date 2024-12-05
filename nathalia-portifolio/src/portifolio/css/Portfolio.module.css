@@ -224,7 +224,8 @@ body {
 }
 
 .title7, .title10, 
-.title13, .title16 {
+.title13, .title16,
+.title17 {
     /* border: 1px solid purple; */
     font-size: 40px;
     font-weight: bold;
@@ -233,7 +234,8 @@ body {
 .description4, 
 .description5, 
 .description6,
-.description7 {
+.description7,
+.description8 {
     /* border: 2px solid aqua; */
     padding-top: 24px !important;
 }
@@ -323,23 +325,26 @@ body {
     padding: 60px 170px !important;
 }
 
-.container10 {
+.container10, .container12 {
     /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container11 {
+.container11, .container12 {
     /* border: 1px solid purple; */
     margin-bottom: 60px !important;
 }
 
 .list8 {
+    width: 800px;
+}
+
+.list8, .list9 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem; 
-    width: 800px;
 }
 
 .skillItem {
@@ -354,3 +359,40 @@ body {
     color: var(--color-text);
 }
 
+/* Testimonials Section */
+.socialPosts {
+    border-bottom: 1px solid var(--color-line);
+    padding: 60px 170px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialPosts2 {
+    width: 600px;
+}
+
+.list9 {
+    gap: 3rem !important;
+}
+
+.testimonialItem {
+    border: 1px solid var(--color-highlights);
+    border-radius: 6px;
+    text-align: justify;
+}
+
+.testimonialsRoleBkg {
+    background-color: var(--color-highlights);
+    color: #000;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonialRole {
+    padding-left: 12px !important;
+}
+
+.testimonialsRoleBkg, .testimonialContent {
+    padding: 12px !important;
+}

@@ -1,5 +1,5 @@
 import { testimonials, skills, certifications, experiences, education, aboutItems } from './data';
-import { Testimonial } from './components/Testimonial';
+// import { Testimonial } from './components/Testimonial';
 // import { SkillItem } from './components/SkillItem';
 // import { CertificationItem } from './components/CertificationItem';
 // import { ExperienceItem } from './components/ExperienceItem';
@@ -172,7 +172,13 @@ export const Portfolio = () => {
             </div>
             <div className={styles.list9}>
               {testimonials.map((testimonial, index) => (
-                <Testimonial key={index} {...testimonial} />
+                <div key={index} className={styles.testimonialItem}>
+                  <div className={styles.testimonialsRoleBkg}>
+                    <p className={styles.testimonialAuthor}>{testimonial.author}</p>
+                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                  </div>
+                  <p className={styles.testimonialContent}>"{testimonial.content}"</p>
+                </div>
               ))}
             </div>
           </div>
