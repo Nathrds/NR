@@ -58,6 +58,12 @@ export const experiences: ExperienceProps[] = [
 export const education: EducationProps[] = [
   {
     icon: "🎓",
+    degree: "Postgraduate MBA in Project Management",
+    institution: "Gran Cursos University",
+    year: "2025"
+  },
+  {
+    icon: "🎓",
     degree: "Analysis and System Development",
     institution: "SENAC DF University of Technology",
     year: "2024"

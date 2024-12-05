@@ -1,15 +1,17 @@
 import { testimonials, skills, certifications, experiences, education, aboutItems } from './data';
 import { Testimonial } from './components/Testimonial';
 import { SkillItem } from './components/SkillItem';
-import { CertificationItem } from './components/CertificationItem';
+// import { CertificationItem } from './components/CertificationItem';
 // import { ExperienceItem } from './components/ExperienceItem';
-import { EducationItem } from './components/EducationItem';
+// import { EducationItem } from './components/EducationItem';
 // import { AboutItem } from './components/AboutItem';
 import styles from './css/Portfolio.module.css';
 
 import Logo from '../assets/Logo NR roxo.png'
 import Avatar from '../assets/avatar.png'
 import Me from '../assets/image-about-me.png'
+import CertifiedAWS from '../assets/Certificado-AWS.png'
+import CertifiedScrum from '../assets/certificate-scrum 1.png'
 
 export const Portfolio = () => {
   return (
@@ -111,7 +113,12 @@ export const Portfolio = () => {
           </div>
           <div className={styles.list5}>
             {education.map((edu, index) => (
-              <EducationItem key={index} {...edu} />
+            <div key={index} className={styles.educationItem}>
+              <p className={styles.educationIcon}>{edu.icon}</p>
+              <p className={styles.educationDegree}>{edu.degree}</p>
+              <h3 className={styles.educationInstitution}>{edu.institution}</h3>
+              <p className={styles.educationYear}>{edu.year}</p>
+            </div>
             ))}
           </div>
         </section>
@@ -125,9 +132,17 @@ export const Portfolio = () => {
             </div>
             <div className={styles.list7}>
               {certifications.map((cert, index) => (
-                <CertificationItem key={index} {...cert} />
+              <div key={index} className={styles.certificationItem}>
+                <p className={styles.certificationIcon}>{cert.icon}</p>
+                <p className={styles.certificationTitle}>{cert.title}</p>
+                <p className={styles.certificationIssuer}>{cert.issuer}</p>
+              </div>
               ))}
             </div>
+              <div className={styles.listImgCertified}>
+                <img src={CertifiedAWS} alt="Certified AWS" className={styles.img4} />
+                <img src={CertifiedScrum} alt="Certified AWS" className={styles.img5} />
+              </div>
           </div>
         </section>
 

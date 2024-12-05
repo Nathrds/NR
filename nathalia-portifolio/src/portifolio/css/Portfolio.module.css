@@ -207,7 +207,8 @@ body {
 }
 
 /* Experience Section */
-.list2 {
+/* Education Section */
+.list2, .list4 {
     /* border: 1px solid red; */
     border-bottom: 1px solid var(--color-line);
     padding: 60px 170px !important;
@@ -217,23 +218,23 @@ body {
     align-items: center;
 }
 
-.container5 {
+.container5, .container6 {
     /* border: 1px solid darkred; */
     text-align: left;
 }
 
-.title7 {
+.title7, .title10, .title13 {
     /* border: 1px solid purple; */
     font-size: 40px;
     font-weight: bold;
 }
 
-.description4 {
+.description4, .description5, .description6 {
     /* border: 2px solid aqua; */
     padding-top: 24px !important;
 }
 
-.list3 {
+.list3, .list5 {
     /* border: 1px solid lightsalmon; */
     display: flex;
     flex-direction: row;
@@ -241,14 +242,18 @@ body {
     justify-content: space-between;
 }
 
-.experienceItem {
+.experienceItem, 
+.educationItem, 
+.certificationItem {
     /* border: 1px solid darkorange; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.experienceIcon {
+.experienceIcon, 
+.educationIcon, 
+.certificationIcon {
     background-color: #000;
     border-radius: 50%;
     height: 90px;
@@ -257,15 +262,51 @@ body {
     font-size: 3.5rem;
 }
 
-.experienceCompany {
+.experienceCompany, 
+.educationDegree,
+.certificationTitle {
     font-size: 20px;
     font-weight: 200;
     margin-bottom: 8px !important;
 }
 
-.experienceTitle {
+.experienceTitle, 
+.educationInstitution,
+.certificationIssuer {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-highlights);
     margin-bottom: 15px !important;
+}
+
+.list5 {
+    width: 750px !important;
+}
+
+/* Certifications Section */
+.list6 {
+    border-bottom: var(--color-line);
+    background-color: #000;
+    padding: 60px 170px !important;
+}
+
+.container8 {
+    /* border: 1px solid purple; */
+    text-align: left;
+    margin-bottom: 60px !important;
+}
+
+.list7, .listImgCertified {
+    /* border: 3px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.certificationIcon {
+    background-color: #201E1E !important;
+}
+
+.listImgCertified {
+    margin-top: 40px !important;
 }
