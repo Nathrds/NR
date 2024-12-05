@@ -115,7 +115,7 @@ body {
 .button:hover,
 .button2:hover,
 .seconday:hover, .primary3:hover {
-    background-color: #9e58f5;
+    background-color: #9b53f4;
 }
 
 /* About Section */
@@ -430,4 +430,10 @@ body {
 .seconday:hover, 
 .primary3:hover {
     color: #000;
+}
+
+/* footer */
+.section3 {
+    padding: 60px 170px !important;
+    background-color: #000;
 }
