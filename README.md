@@ -5,13 +5,14 @@
 
 ## [Curriculum vitæ](https://nathrds.github.io/NR/)
 
-Primeira proposta de um projeto curriculum site.
+Proposta de um projeto curriculum site.
 
 <br/>
 
 ## Tecnologias
-* HTML
-* CSS
+* React
+* Typescript
+* CSS Modules
 
 <br/>
 
