@@ -209,7 +209,7 @@ export const Portfolio = () => {
       </main>
 
       <footer className={styles.section3} role="contentinfo">
-        © 2022 Web Developer Portfolio | All rights reserved
+        © 2024 Web Developer Portfolio | All rights reserved
       </footer>
     </div>
   );
