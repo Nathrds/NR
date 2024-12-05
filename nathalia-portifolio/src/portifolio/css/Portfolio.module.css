@@ -113,7 +113,8 @@ body {
 }
 
 .button:hover,
-.button2:hover {
+.button2:hover,
+.seconday:hover, .primary3:hover {
     background-color: #9e58f5;
 }
 
@@ -225,7 +226,7 @@ body {
 
 .title7, .title10, 
 .title13, .title16,
-.title17 {
+.title17, .title18 {
     /* border: 1px solid purple; */
     font-size: 40px;
     font-weight: bold;
@@ -318,7 +319,7 @@ body {
 }
 
 /* Skills Section */
-.dataMetrics {
+.dataMetrics, .form {
     /* border: 1px solid red; */
     border-top: 1px solid var(--color-line);
     border-bottom: 1px solid var(--color-line);
@@ -395,4 +396,38 @@ body {
 
 .testimonialsRoleBkg, .testimonialContent {
     padding: 12px !important;
+}
+
+/* Contact Section */
+.title18 {
+    margin-bottom: 60px !important;
+}
+
+.button3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.seconday {
+    border: 1px solid var(--color-highlights);
+    color: var(--color-text);
+    margin-right: 12px !important;
+}
+.seconday, .primary3 {
+    border-radius: 6px;
+    padding: 12px 30px !important;
+    width: 240px;
+    height: 48px;
+}
+
+.primary3 {
+    background-color: var(--color-highlights);
+    color: #000;
+}
+
+.seconday:hover, 
+.primary3:hover {
+    color: #000;
 }

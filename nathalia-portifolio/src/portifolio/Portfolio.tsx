@@ -186,11 +186,11 @@ export const Portfolio = () => {
 
         {/* Contact Section */}
         <section className={styles.form} id="contact">
-          <h2 className={styles.container13}>Contact Me</h2>
+          <h2 className={styles.title18}>Contact Me</h2>
           <div className={styles.list10}>
             <div className={styles.button3}>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" 
                 className={styles.seconday}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -198,7 +198,7 @@ export const Portfolio = () => {
                 Connect on LinkedIn
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:nathaliarsantos@live.com" 
                 className={styles.primary3}
               >
                 Send Email
