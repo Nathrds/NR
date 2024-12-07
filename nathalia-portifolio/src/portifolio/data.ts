@@ -59,7 +59,7 @@ export const education: EducationProps[] = [
   {
     icon: "🎓",
     degree: "Postgraduate MBA in Project Management",
-    institution: "Gran Cursos University",
+    institution: "Gran University",
     year: "2025"
   },
   {
