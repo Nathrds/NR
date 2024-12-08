@@ -1,11 +1,7 @@
-import { testimonials, skills, certifications, experiences, education, aboutItems } from './data';
-// import { Testimonial } from './components/Testimonial';
-// import { SkillItem } from './components/SkillItem';
-// import { CertificationItem } from './components/CertificationItem';
-// import { ExperienceItem } from './components/ExperienceItem';
-// import { EducationItem } from './components/EducationItem';
-// import { AboutItem } from './components/AboutItem';
-import styles from './css/Portfolio.module.css';
+import { useState } from 'react'
+import { testimonials, skills, certifications, experiences, education, aboutItems } from './data'
+import styles from './css/Portfolio.module.css'
+
 
 import Logo from '../assets/Logo NR roxo.png'
 import Avatar from '../assets/avatar.png'
@@ -14,6 +10,18 @@ import CertifiedAWS from '../assets/Certificado-AWS.png'
 import CertifiedScrum from '../assets/certificate-scrum 1.png'
 
 export const Portfolio = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  // Função para alternar o menu
+  const changeMenu = () => {
+    setMenuOpen(!menuOpen)
+  };
+
+  // Função para fechar o menu ao clicar em um link
+  const closeMenu = () => {
+    setMenuOpen(false)
+  };
+
   return (
     <div className={styles.page}>
       <header className={styles.topBar} role="banner">
@@ -21,13 +29,26 @@ export const Portfolio = () => {
             <img src={Logo} alt="Portfolio Logo" className={styles.img} />
             <h1 className={styles.title}>Nathália Portfolio</h1>
         </div>
-        <nav className={styles.navigation} role="navigation">
-          <a href="#home" className={styles.tab}>Home</a>
-          <a href="#about" className={styles.tab}>About</a>
-          <a href="#experience" className={styles.tab}>Experience</a>
-          <a href="#skills" className={styles.tab}>Skills</a>
-          <a href="#certifications" className={styles.tab}>Certifications</a>
-          <a href="#contact" className={styles.tab}>Contact</a>
+        <button 
+          className={styles.hamburger} 
+          aria-label="Toggle navigation" 
+          aria-expanded={menuOpen}
+          // onClick={() => setMenuOpen(!menuOpen)}
+          onClick={changeMenu}
+        >
+          <span className={styles.hamburgerBar}></span>
+          <span className={styles.hamburgerBar}></span>
+          <span className={styles.hamburgerBar}></span>
+        </button>
+        <nav 
+          className={`${styles.navigation} ${menuOpen ? styles.navigationOpen : ''}`} role="navigation"
+        >
+          <a href="#home" className={styles.tab} onClick={closeMenu}>Home</a>
+          <a href="#about" className={styles.tab} onClick={closeMenu}>About</a>
+          <a href="#experience" className={styles.tab} onClick={closeMenu}>Experience</a>
+          <a href="#skills" className={styles.tab} onClick={closeMenu}>Skills</a>
+          <a href="#certifications" className={styles.tab} onClick={closeMenu}>Certifications</a>
+          <a href="#contact" className={styles.tab} onClick={closeMenu}>Contact</a>
         </nav>
       </header>
 
