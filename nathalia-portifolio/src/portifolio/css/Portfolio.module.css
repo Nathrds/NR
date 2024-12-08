@@ -34,7 +34,7 @@ body {
 }
 
 .topBar {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     background-color: var(--color-bkg);
     position: fixed;
     top: 0;
@@ -60,22 +60,29 @@ body {
 }
 
 .img {
-    width: 36px;
+    width: 30px;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 20px !important;
     font-weight: 500;
 }
 
 .tab {
     color: var(--color-text);
+    font-size: 1.3rem !important;
     padding: 0 40px !important;
 }
 
 .tab:hover {
     color: var(--color-highlights);
+}
+
+@media screen and (max-width: 1382px) {
+    .tab {
+        padding: 0 30px !important;
+    }
 }
 
 /* Menu hamburguer */
